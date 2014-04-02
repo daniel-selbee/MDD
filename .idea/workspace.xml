@@ -5,7 +5,8 @@
     <ignored path="MDD.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1396302004605" ignored="false" />
-    <file path="/index.html" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1396405816087" ignored="false" />
+    <file path="/index.html" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1396406710001" ignored="false" />
+    <file path="/custom.css" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1396405958909" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,16 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="30" selection-start="116" selection-end="116" vertical-scroll-proportion="0.09146342">
+            <state line="9" column="53" selection-start="423" selection-end="423" vertical-scroll-proportion="0.20579268">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,6 +62,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -273,9 +284,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="30" selection-start="116" selection-end="116" vertical-scroll-proportion="0.09146342">
+        <state line="9" column="53" selection-start="423" selection-end="423" vertical-scroll-proportion="0.20579268">
           <folding />
         </state>
       </provider>
