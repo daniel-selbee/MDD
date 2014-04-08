@@ -1,13 +1,21 @@
-var videoControllers = angular.module('videoControllers', ['ngAnimate']);
+var movieControllers = angular.module('movieControllers', []);
 
-//THESE CONTROL THE SUB PAGE CONTENT OR VIEWS
-videoControllers.controller('ListController', ['$scope', '$http', function($scope, $http){
- //NEED TO GET DATA FROM THE YOUTUBE API HERE
-    //this will be the home page of the application.
+movieControllers.controller('ListController', function($scope, $http){
 
-}]);
+    $http.jsonp('http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json', {
+        params: {
+            apikey: 't47cwspvrd5pwh234nkbgakx',
+            callback: 'JSON_CALLBACK',
+            total: 50,
+            page_limit: 15
 
-videoControllers.controller('DetailsController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
-     //this will be the video page
+        }
+    })
+        .success(function (data) {
+            $scope.movies = data;
+            console.log(data);
 
-}]);
+        });
+
+
+});

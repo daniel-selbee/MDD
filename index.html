@@ -1,31 +1,21 @@
 <!-- FOUNDATION OF BOOTSTRAP FORMATTING -->
 <!doctype html>
-    <html>
+    <html lang="en" ng-app="myApp">
         <head>
-            <title>MDD Project</title>
+            <title>Movies in Theaters</title>
             <meta charset="utf-8">
-            <!--Bootstrap setup files-->
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--CSS-->
             <link href="css/bootstrap.min.css" rel="stylesheet">
-            <link href="css/custom.css" rel="stylesheet">
-            <script src="js/respond.min.js"></script>
+            <link href="css/app.css" rel="stylesheet">
             <!--Angular setup Files-->
             <script src="lib/angular/angular.min.js"></script>
             <script src="lib/angular/angular-route.js"></script>
-            <script src="lib/angular/angular-animate.min.js"></script>
-
-            <!--MVC JS FILES-->
             <script src="js/app.js"></script>
             <script src="js/controllers.js"></script>
-
         </head>
 
-        <body>
-        <div class="main" ng-view>
-            <!--<h1>hi</h1> DISPLAYS AS HOME PAGE, THIS NEEDS TO BE REROUTED TO LIST.HTML-->
-            <!-- javascript -->
-            <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-        </div>
+        <body ng-view>
+
+
         </body>
     </html>

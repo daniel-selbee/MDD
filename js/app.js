@@ -1,16 +1,11 @@
-var myApp = angular.module('myApp', ['ngRoute', 'videoControllers']);
+var myApp = angular.module('myApp', ['ngRoute', 'movieControllers']);
 
-myApp.config(['$routeProvider', function($routeProvider){
+myApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
-        when('/list', {
-        templateUrl: 'views/list.html',
+        when('/list',{
+        templateUrl: 'partials/lists.html',
         controller: 'ListController'
-    }).
-        when('/details/:itemId', {
-            templateUrl:'views/details.html',
-            controller: 'DetailsController'
-    }).
-        otherwise({
-            redirectTo: '/list'
-    });
-}]);
+    }).otherwise({
+            redirectTo:'/list'
+        });
+}])
