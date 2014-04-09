@@ -1,45 +1,33 @@
 /* THIS CUSTOM CSS WILL BE LINKED IN ADDITION TO THE BOOTSTRAP CSS */
-html{
-    background-color: black;
-}
-.container-fluid{
-    background-color: black;
 
-}
+/*CURRENT STYLE HAS BEEN KEPT TO A MINIMUM FOR FUNCTIONALITY PURPOSES*/
 ul{
     list-style: none;
-}
-
-li {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    clear: both;
 }
 
 li:first-of-type{
     margin-top: 20px;
 }
 
-li:nth-child(odd){
-    background-color: rgba(64,134,247,0.8);
+a:hover {
+    text-decoration: none;
 }
 
-li:nth-child(even){
-    background-color: rgba(194,194,194,0.8);
+a:visited{
+    color:#000000;
+    text-decoration: none;
+
 }
 
-p {
+.moviePage a{
+    clear: both;
     padding: 10px;
-    float: left;
-    color: white;
 }
 
-h1, h2, h3, h4, h5, h6{
-    padding: 10px;
-    color: white;
+.moviePage p{
+    color: black;
+    float: none;
 }
 
-label{
-    color: white;
-    padding-left: 10px;
-}
+
+
