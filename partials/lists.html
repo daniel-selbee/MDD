@@ -1,35 +1,37 @@
 <section class="mainPage">
-
-    <div class = "container-fluid">
-        <div class="row-fluid">
-            <div class="span2">
-
-            </div>
-            <div class="span10">
-                <!--HEADER CONTENT. LOGO WILL GO HERE WHEN IT'S FINISHED-->
-                <h1>Movies in Theaters</h1>
-                <h3>Powered by Rotten Tomatoes</h3>
-
-                <!--SEARCH BAR-->
-                <label>Search:</label> <input ng-model="query">
-                <label>Sort by:</label>
-                <select ng-model="orderProp">
-                    <option value="title">Title</option>
-                </select>
-                <ul>
-                    <li ng-repeat="movie in movies.movies | filter:query | orderBy:orderProp">
-
-                        <!--ROTTEN TOMATOES API INFO WILL GO IN HERE-->
-                        <a href= "#/movie/{{movie.id}}">
-                        <p><img src="{{movie.posters.profile}}" alt="{{movie.title + 'poster'}}"/>
-                        <h3>{{movie.title}}</h3>
-                        <p>Critic's Score:{{movie.ratings.critics_score}},
-                            Audience Score:{{movie.ratings.audience_score}}</p>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
+    <!--HEADER CONTENT. LOGO WILL GO HERE WHEN IT'S FINISHED-->
+    <header>
+    <div class="title">
+        <h1>Now Playing</h1>
     </div>
+    </header>
+
+    <!--SEARCH BAR-->
+    <div class="search">
+        <label>Search:</label> <input ng-model="query">
+        <label>Sort by:</label>
+        <select ng-model="orderProp">
+            <option value="title">Title</option>
+        </select>
+    </div>
+    <div class="container">
+        <ul>
+            <li ng-repeat="movie in movies.movies | filter:query | orderBy:orderProp" class="col-md-4">
+                <!--ROTTEN TOMATOES API INFO WILL GO IN HERE-->
+                <a href="#/movie/{{movie.id}}">
+                        <p><img src="{{movie.posters.profile}}" alt="{{movie.title + 'poster'}}"/>
+
+                        <h3>{{movie.title}}</h3>
+
+
+                </a>
+            </li>
+        </ul>
+
+        <footer class="row">
+            <p>copyright Daniel Selbee 2014</p>
+
+        </footer>
+    </div>
+
 </section>

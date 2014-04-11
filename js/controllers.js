@@ -6,8 +6,7 @@ movieControllers.controller('ListController', function($scope, $http){
         params: {
             apikey: 't47cwspvrd5pwh234nkbgakx',
             callback: 'JSON_CALLBACK',
-            total: 50,
-            page_limit: 15
+            page_limit: 50
         }
     })
         .success(function (data) {
@@ -25,8 +24,7 @@ movieControllers.controller('DetailsController', function($scope, $http, $routeP
         params: {
             apikey: 't47cwspvrd5pwh234nkbgakx',
             callback: 'JSON_CALLBACK',
-            total: 50,
-            page_limit: 15
+            total: 50
         }
     })
         .success(function (data) {
