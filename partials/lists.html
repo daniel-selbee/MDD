@@ -10,13 +10,12 @@
     <div class="search">
         <label>Search:</label> <input ng-model="query">
         <label>Sort by:</label>
-        <select ng-model="orderProp" class="hidden-sm">
+        <select ng-model="orderProp">
             <option value="title">Title</option>
         </select>
     </div>
-    <div class="container">
-        <ul>
-            <li ng-repeat="movie in movies.movies | filter:query | orderBy:orderProp" class="col-md-4">
+        <ul class="list-group">
+            <li ng-repeat="movie in movies.movies | filter:query | orderBy:orderProp" class="list-group-item">
                 <!--ROTTEN TOMATOES API INFO WILL GO IN HERE-->
                 <a href="#/movie/{{movie.id}}">
                         <p><img src="{{movie.posters.profile}}" alt="{{movie.title + 'poster'}}"/>
@@ -27,11 +26,9 @@
                 </a>
             </li>
         </ul>
-
-        <footer class="row">
-            <p>copyright Daniel Selbee 2014</p>
-
-        </footer>
     </div>
+    <footer class="row">
+        <p>copyright Daniel Selbee 2014</p>
+    </footer>
 
 </section>

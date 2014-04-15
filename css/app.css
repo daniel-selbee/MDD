@@ -41,15 +41,27 @@ header {
 
 ul{
     list-style: none;
+    margin-top: 20px;
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
 }
 
 li {
     margin-top:20px;
+
 }
 
-li img{
+.list-group-item img{
     -webkit-box-shadow: 3px 3px 10px 3px rgba(0,0,0,.35);
     box-shadow: 3px 3px 10px 3px rgba(0,0,0,.35);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-group-item{
+    background-color: rgba(0,0,0,0);
+    border: none;
 }
 
 
@@ -67,12 +79,86 @@ a:hover{
 footer{
     text-align: center;
     font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-@media only screen and (max-device-width: 480px) {
+
+/*iPhone Media Query*/
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
     body{
         width: 100%;
         border-radius: 0px;
+
+    }
+    header{
+        width: 100%;
+        border-radius: 0px;
+    }
+    ul{
+        column-count:1;
+        -moz-column-count:1; /* Firefox */
+        -webkit-column-count:1; /* Safari and Chrome */
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    /* Styles */
+    body{
+        width: 768px;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 20px;
+    }
+    .title{
+        font-size: 50px;
+    }
+    ul{
+        column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+    }
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        width: 80%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    /* Styles */
+    body{
+        width: 100%;
+        font-size: 30px;
+    }
+    .title h1{
+        font-size: 70px;
+    }
+    .search{
+        width: 50%;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .search select{
+        margin-top: 10px;
+    }
+    ul{
+        column-count:2;
+        -moz-column-count:2; /* Firefox */
+        -webkit-column-count:2; /* Safari and Chrome */
     }
 }
 
