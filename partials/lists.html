@@ -2,20 +2,26 @@
     <!--HEADER CONTENT. LOGO WILL GO HERE WHEN IT'S FINISHED-->
     <header>
     <div class="title">
-        <h1>Now Playing</h1>
+        <h1 autofocus>Now Playing</h1>
     </div>
     </header>
 
     <!--SEARCH BAR-->
     <div class="search">
-        <label>Search:</label> <input ng-model="query">
+        <input ng-model="query" placeholder="Search for Movies">
+
         <label>Sort by:</label>
-        <select ng-model="orderProp">
-            <option value="title">Title</option>
+        <select ng-model="sort">
+            <option>Title</option>
+            <option>Rating</option>
         </select>
+        <form>
+        <input type="radio" ng-model="direction" name="direction"/> Ascending
+        <input type="radio" ng-model="direction" value="reverse" name="direction"/> Descending
+        </form>
     </div>
         <ul class="list-group">
-            <li ng-repeat="movie in movies.movies | filter:query | orderBy:orderProp" class="list-group-item">
+            <li ng-repeat="movie in movies.movies | filter:query | orderBy:sort:direction | limitTo:8" class="list-group-item">
                 <!--ROTTEN TOMATOES API INFO WILL GO IN HERE-->
                 <a href="#/movie/{{movie.id}}">
                         <p><img src="{{movie.posters.profile}}" alt="{{movie.title + 'poster'}}"/>
