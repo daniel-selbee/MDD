@@ -2,26 +2,31 @@
     <!--HEADER CONTENT. LOGO WILL GO HERE WHEN IT'S FINISHED-->
     <header>
     <div class="title">
-        <h1 autofocus>Now Playing</h1>
+        <h1>Now Playing</h1>
     </div>
     </header>
 
     <!--SEARCH BAR-->
     <div class="search">
-        <input ng-model="query" placeholder="Search for Movies">
-
+        <div class="searchbar">
+        <input type="text" ng-model="query" placeholder="Search for Movies">
+        </div>
+        <div class="dropdown">
         <label>Sort by:</label>
-        <select ng-model="sort">
-            <option>Title</option>
-            <option>Rating</option>
+        <select ng-model="sortMovies">
+            <option value="title">Title</option>
+            <!--<option value="critics_score">Rating</option> NOT QUITE WORKING YET-->
         </select>
+        </div>
+        <div class="radio">
         <form>
-        <input type="radio" ng-model="direction" name="direction"/> Ascending
-        <input type="radio" ng-model="direction" value="reverse" name="direction"/> Descending
+        <input type="radio" ng-model="direction" name="direction"/>Ascending<br>
+        <input class="radio" type="radio" ng-model="direction" value="reverse" name="direction"/>Descending
         </form>
+        </div>
     </div>
         <ul class="list-group">
-            <li ng-repeat="movie in movies.movies | filter:query | orderBy:sort:direction | limitTo:8" class="list-group-item">
+            <li ng-repeat="movie in movies.movies | filter:query | orderBy:sortMovies:direction | limitTo:8" class="list-group-item">
                 <!--ROTTEN TOMATOES API INFO WILL GO IN HERE-->
                 <a href="#/movie/{{movie.id}}">
                         <p><img src="{{movie.posters.profile}}" alt="{{movie.title + 'poster'}}"/>
