@@ -16,7 +16,7 @@ body{
     -webkit-box-shadow: inset 3px 3px 10px 3px rgba(0,0,0,.5);
     box-shadow: inset 3px 3px 10px 3px rgba(0,0,0,.5);
 }
-
+/*------------------------------------START HEADER---------------------*/
 header {
     background-color: black;
     border-top-left-radius: 20px;
@@ -35,8 +35,35 @@ header {
     padding-bottom: 30px;
 }
 
+.title h1{
+    font-size: 50px;
+}
+
+/*------------------------------------END HEADER-------------------------------------*/
+
+/*------------------------------------START SEARCH-------------------------------------*/
+
 .search{
     text-align: center;
+}
+
+.searchbar input{
+    text-align: center;
+    width: 40%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.dropdown label{
+    font-size: 20px;
+}
+
+select{
+    width: 15%;
+    font-size: 30px;
 }
 
 form{
@@ -45,6 +72,13 @@ form{
     margin-right:auto;
 }
 
+form label{
+    font-size: 18px;
+}
+
+/*------------------------------------END SEARCH-------------------------------------*/
+
+/*------------------------------------START LIST-------------------------------------*/
 .list-group{
     width: 100%;
     margin-top: 20px;
@@ -69,9 +103,18 @@ form{
     height: 250px;
 }
 
+.list-group-item p{
+    width: 100%;
+    text-align: center;
+}
 
+/*------------------------------------END LIST-------------------------------------*/
+
+
+/*------------------------------------START LIST LINKS-------------------------------------*/
 a {
     color: white;
+    text-align: center;
 }
 
 a:hover{
@@ -80,6 +123,9 @@ a:hover{
     color: white;
 }
 
+/*------------------------------------END LIST LINKS-------------------------------------*/
+
+/*------------------------------------START FOOTER-------------------------------------*/
 footer{
     text-align: center;
     font-size: 20px;
@@ -88,6 +134,23 @@ footer{
     clear: both;
 }
 
+/*------------------------------------END FOOTER-------------------------------------*/
+
+/*------------------------------------START INDIVIDUAL MOVIE PAGE-------------------------------------*/
+strong{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+p{
+    font-size: 20px;
+    width: 85%;
+}
+
+/*------------------------------------END INDIVIDUAL MOVIE PAGE-------------------------------------*/
+
+
+/*------------------------------------START BACK BUTTON-------------------------------------*/
 .movies_link{
     width: 150px;
 }
@@ -124,11 +187,16 @@ footer{
     -webkit-transform: scale(1.10);
 }
 
+/*------------------------------------END BACK BUTTON-------------------------------------*/
 
-/*iPhone Media Query*/
+/*------------------------------------START MEDIA QUERIES-------------------------------------*/
+
+
+/*------------------------------------START IPHONE PORTRAIT MEDIA QUERY-------------------------------------*/
 @media only screen
 and (max-device-width: 320px)
-and (max-device-width: 480px) {
+and (max-device-width: 568px)
+{
     body {
         margin: 0;
         margin-left: auto;
@@ -137,39 +205,169 @@ and (max-device-width: 480px) {
         max-width: 480px;
         min-width: 320px;
         padding: 0;
-}
+    }
     header{
         margin:0;
         padding:0;
         width: 100%;
         min-width: 320px;
         max-width: 480px;
-}
+    }
     .list-group-item{
     width: 100%;
-}
+    }
     .list-group-item h3{
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-}
+    }
+
+    .searchbar input{
+        width: 70%;
+        margin-top: 15px;
+    }
+
+    select{
+        width: 40%;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .posterContainer{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .posterContainer img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    strong{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 16px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .back_button{
+        width: 50%;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+        text-align: center;
+    }
 }
 
+/*------------------------------------END IPHONE MEDIA QUERY-------------------------------------*/
 
-/* iPads (landscape) ----------- */
+
+/*------------------------------------START IPAD LANDSCAPE MEDIA QUERY-------------------------------------*/
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
     /* Styles */
-    .title{
-        font-size: 50px;
+    body{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .title h1{
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .searchbar input{
+        width: 50%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 30px;
+    }
+     .dropdown select{
+        width: 20%;
+     }
+
+    .dropdown label{
+        font-size: 35px;
+    }
+
+    form{
+        width: 20%;
+    }
+
+    form input{
+        width: 30px;
+        height: 30px;
+    }
+    form label{
+        font-size: 30px;
+    }
+
+    .list-group-item{
+        margin-bottom: 200px;
+    }
+
+    .list-group-item img{
+        width: 40%;
+    }
+
+    h3{
+        font-size: 35px;
+    }
+
+    .posterContainer{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .posterContainer img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        font-size: 60px;
         text-align: center;
     }
 
+    strong{
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 35px;
+        width: 100%;
+    }
+
+    .back_button{
+        width: 40%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-/* iPads (portrait) ----------- */
+/*------------------------------------END IPAD LANDSCAPE MEDIA QUERY-------------------------------------*/
+
+/*------------------------------------START IPAD PORTRAIT MEDIA QUERY-------------------------------------*/
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
@@ -202,11 +400,28 @@ and (orientation : portrait) {
     .searchbar input{
         width: 70%;
         height: 75px;
+        font-size: 30px;
+    }
+
+    .dropdown{
+        width: 100%;
+    }
+
+    .dropdown label{
+        font-size: 30px;
+    }
+
+    select{
+        width: 50%;
     }
 
     form{
         font-size: 30px;
         width: 60%;
+    }
+
+    form label{
+        font-size: 30px;
     }
 
     input{
@@ -242,12 +457,55 @@ and (orientation : portrait) {
 
     .list-group-item{
         width: 100%;
+        margin-bottom: 200px;
+    }
+
+    .list-group-item img{
+        width: 30%;
     }
 
     .list-group-item h3{
         font-size: 40px;
     }
 
+    .posterContainer{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .posterContainer img{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        font-size: 60px;
+        margin-left: 5px;
+        text-align: center;
+    }
+    strong{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 36px;
+        margin-left: 5px;
+    }
+
+    .back_button{
+        width: 50%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+    }
+
 }
+
+/*------------------------------------END IPAD PORTRAIT MEDIA QUERY-------------------------------------*/
+
+/*------------------------------------END MEDIA QUERIES-------------------------------------*/
 
 

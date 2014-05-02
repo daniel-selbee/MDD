@@ -1,7 +1,7 @@
    <!--THIS PAGE SHOWS THE INDIVIDUAL MOVIES WHEN THEY ARE CLICKED ON IN THE HOME PAGE-->
 <section class="moviePage">
     <div class="container">
-        <div><img src="{{singleMovies.posters.detailed}}" alt="{{singleMovies.title + 'poster'}}" autofocus/>
+        <div class="posterContainer"><img src="{{singleMovies.posters.detailed}}" alt="{{singleMovies.title + 'poster'}}" autofocus/>
         <h1>{{singleMovies.title}}</h1>
         </div>
        <p><strong>Rated:</strong> {{singleMovies.mpaa_rating}}</p>
@@ -10,7 +10,7 @@
        <p><strong>What Audiences think:</strong> {{singleMovies.ratings.audience_rating}}</p>
        <p><strong>Audiences Score:</strong> {{singleMovies.ratings.audience_score}}</p>
        <p class="synopsis"><strong>Synopsis</strong></p>
-       <p class="description">{{singleMovies.synopsis}}</p>
+       <p class="description">&nbsp{{singleMovies.synopsis}}</p>
         <a class="movies_link" href="index.html"><h5 class="back_button">Back to search</h5></a>
     </div>
     </section>

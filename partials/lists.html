@@ -20,13 +20,15 @@
         </div>
         <div class="radio">
         <form>
+        <label>
         <input type="radio" ng-model="direction" name="direction"/>Ascending<br>
         <input class="radio" type="radio" ng-model="direction" value="reverse" name="direction"/>Descending
+        </label>
         </form>
         </div>
     </div>
         <ul class="list-group">
-            <li ng-repeat="movie in movies.movies | filter:query | orderBy:sortMovies:direction | limitTo:8" class="list-group-item">
+            <li ng-repeat="movie in movies.movies | filter:query | orderBy:sortMovies:direction" class="list-group-item">
                 <!--ROTTEN TOMATOES API INFO WILL GO IN HERE-->
                 <a href="#/movie/{{movie.id}}">
                         <p><img src="{{movie.posters.profile}}" alt="{{movie.title + 'poster'}}"/>

@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b7e47079-51fb-4038-ad31-08f3a33705b7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/lists.html" afterPath="$PROJECT_DIR$/partials/lists.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/movie.html" afterPath="$PROJECT_DIR$/partials/movie.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MDD.iws" />
@@ -15,10 +15,10 @@
     <file path="/controllers.js" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1399055517632" ignored="false" />
     <file path="/list.html" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1396490771330" ignored="false" />
     <file path="/details.html" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1397077767809" ignored="false" />
-    <file path="/app.css" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1398972029822" ignored="false" />
-    <file path="/lists.html" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1399055795042" ignored="false" />
+    <file path="/app.css" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1399069743454" ignored="false" />
+    <file path="/lists.html" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1399058009120" ignored="false" />
     <file path="/app.js" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1396985700533" ignored="false" />
-    <file path="/movie.html" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1398881350427" ignored="false" />
+    <file path="/movie.html" changelist="b7e47079-51fb-4038-ad31-08f3a33705b7" time="1399061435092" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,39 +38,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="209" column="42" selection-start="5286" selection-end="5286" vertical-scroll-proportion="0.0">
+            <state line="197" column="29" selection-start="5901" selection-end="5901" vertical-scroll-proportion="0.17910448">
               <folding>
-                <element signature="e#2019#2682#2" expanded="true" />
+                <element signature="e#3725#4388#2" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lists.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="lists.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/lists.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="36" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.8606811">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="37" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="34" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+            <state line="13" column="30" selection-start="384" selection-end="384" vertical-scroll-proportion="-2.5416667">
               <folding />
             </state>
           </provider>
@@ -79,7 +61,7 @@
       <file leaf-file-name="movie.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/movie.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="62" selection-start="440" selection-end="462" vertical-scroll-proportion="-4.375">
+            <state line="3" column="35" selection-start="166" selection-end="181" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -110,10 +92,10 @@
         <option value="$PROJECT_DIR$/partials/details.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/partials/movie.html" />
-        <option value="$PROJECT_DIR$/css/app.css" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
         <option value="$PROJECT_DIR$/partials/lists.html" />
+        <option value="$PROJECT_DIR$/partials/movie.html" />
+        <option value="$PROJECT_DIR$/css/app.css" />
       </list>
     </option>
   </component>
@@ -361,7 +343,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="71" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#2019#2682#2" expanded="true" />
+            <element signature="e#3725#4388#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -375,7 +357,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#2019#2682#2" expanded="true" />
+            <element signature="e#3725#4388#2" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -402,13 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/movie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="62" selection-start="440" selection-end="462" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="34" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
@@ -423,19 +398,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/app.css">
+    <entry file="file://$PROJECT_DIR$/partials/lists.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="42" selection-start="5286" selection-end="5286" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#2019#2682#2" expanded="true" />
-          </folding>
+        <state line="13" column="30" selection-start="384" selection-end="384" vertical-scroll-proportion="-2.5416667">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/lists.html">
+    <entry file="file://$PROJECT_DIR$/partials/movie.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="36" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.8606811">
+        <state line="3" column="35" selection-start="166" selection-end="181" vertical-scroll-proportion="-1.875">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="29" selection-start="5901" selection-end="5901" vertical-scroll-proportion="0.17910448">
+          <folding>
+            <element signature="e#3725#4388#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
